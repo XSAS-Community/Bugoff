@@ -1,0 +1,37 @@
+<div class="container-login100">
+    <div class=" m-5 cuadroprincipal">
+        <div class=" mb-5 ">
+            <div class="row">
+                <div class="col cuadroizq shadow-lg text-center" style="background: rgb(0,188,252);">
+                    <img class="centrado" src="../assets/images/logo_bugoff3.png" alt="" style="width: 9rem;">
+                </div>
+                <div class="col cuadroder  shadow-lg " style="background: rgb(255, 255, 255);">
+                    <div class="px-3">
+                        <div class="texto1">
+                            <h1>Recuperar contraseña</h1>
+                        </div>
+                        <div class="texto2">
+                            <p>Ingrese su correo electrónico</p>
+                        </div>
+                        <form ngNativeValidate (ngSubmit)="onRecuperar()">
+                            <div class="my-3">
+                                <input [(ngModel)]="correo" required class="input100" type="email" name="email" placeholder="Email">
+                            </div>
+                            <div>
+                                <button class="btn-login"> Recuperar </button>
+                            </div>
+                        </form>
+                        <div class="registrate">
+                            <p class="registrate"> ¿Ventana equivocada?
+                                <a class="link" routerLink="/login">
+                  Inicia sesión
+                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
